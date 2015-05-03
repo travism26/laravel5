@@ -20,3 +20,7 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
+Route::get('interface', [
+	'as' => 'interface_kata',
+	'uses'=> 'InterfaceKataController@index'
+]);
